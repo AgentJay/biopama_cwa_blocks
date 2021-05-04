@@ -1,0 +1,6 @@
+biopama_cwa_blocks.content:
+  path: '/cwa_homepage'
+  defaults:
+    _controller: '\Drupal\biopama_cwa_blocks\Controller\CwaHomepageController::content'
+  requirements:
+    _permission: 'access content'

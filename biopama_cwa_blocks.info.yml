@@ -1,0 +1,8 @@
+name: 'BIOPAMA Central and Western Africa Blocks'
+description: 'Add a custom homepage, Header, and Footer Block that matches for Central and Western Africa'
+package: BIOPAMA
+type: module
+version: !!float 1
+core: 8.x
+dependencies:
+  - block

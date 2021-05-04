@@ -1,0 +1,25 @@
+<?php
+
+/**
+ * implementing hook_theme().
+ */
+function biopama_cwa_blocks_theme($existing, $type, $theme, $path) {
+  return [
+    'cwa_header' => [
+      'variables' => [],
+    ],
+	'cwa_footer' => [
+      'variables' => [],
+    ],
+	'cwa_homepage' => [
+      'variables' => [],
+    ],
+  ];
+}
+
+function biopama_cwa_blocks_preprocess(&$variables, $hook) {
+  global $base_root, $base_path;
+  $variables['cwa_blocks_image_path'] = $base_root . $base_path . drupal_get_path('module', 'biopama_cwa_blocks') . '/img/';
+  $variables['base_url'] = $GLOBALS['base_url'];
+}
+

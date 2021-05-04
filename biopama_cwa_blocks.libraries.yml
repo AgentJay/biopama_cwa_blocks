@@ -1,0 +1,19 @@
+biopama_cwa_header:
+  css:
+    component:
+      css/header.css: {}
+
+biopama_cwa_footer:
+  css:
+    component:
+      css/footer.css: {}
+
+biopama_cwa_homepage:
+  js:
+    js/homepage.js: {}
+  css:
+    component:
+      css/homepage.css: {}
+  dependencies:
+    - core/drupal
+    - core/jquery
